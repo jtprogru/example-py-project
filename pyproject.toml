@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "example-py-project"
+version = "0.1.0"
+description = "Example project"
+authors = ["Michael Savin <m.savin@corp.mail.ru>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+requests = "^2.25.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.4"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/python-poetry/poetry/issues"
+
+[tool.poetry.scripts]
+runserver = 'example_py_project.main:run'
