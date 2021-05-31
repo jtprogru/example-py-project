@@ -26,11 +26,7 @@ def run() -> None:
     for _ in range(COUNTER):
         time.sleep(0.5)
         page = get_page(URL)
-        if int(page.status_code) != 200:
-            print(page.mro)
-            # print(f"Status code is: {status}")
-        else:
-            print(f"{NAME}! We're have problem!")
+        print(page.status_code)
 
 if __name__ == '__main__':
     run()
